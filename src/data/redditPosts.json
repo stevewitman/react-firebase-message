@@ -1,0 +1,22 @@
+{
+    "a": {
+        "title": "Java Script",
+        "comments": 36,
+        "submitted": "2000-01-01"
+    },
+    "b": {
+        "title": "Create React App",
+        "comments": 25,
+        "submitted": "2000-01-01"
+    },
+    "c": {
+        "title": "Check this out",
+        "comments": 2,
+        "submitted": "2000-01-01"
+    },
+    "d": {
+        "title": "A Reddit Post",
+        "comments": 0,
+        "submitted": "2000-01-01"
+    }
+}
