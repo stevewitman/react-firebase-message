@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import RedditPost from './RedditPost'
+import RedditPost from './RedditPost';
+import redditPosts from './data/redditPosts';
 
-const name = 'asjkf'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <RedditPost></RedditPost>
-        <RedditPost></RedditPost>
-        <RedditPost></RedditPost>
-        <RedditPost></RedditPost>
+        {redditPosts.map(redditPost => {
+          return <RedditPost
+            title={redditPost.title}
+            comments={redditPost.comments}
+            submitted={redditPost.submitted}
+          />
+        })}
       </div>
     );
   }

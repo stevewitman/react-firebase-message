@@ -2,12 +2,13 @@ import React from 'react';
 
 const style = {display: 'flex', flexDirection: 'column', marginBottom: 30}
 
-export default () => {
+export default (props) => {
+    console.log(props)
     return <div style={style}>
-        <a href="http:/google.com">A Reddit Post</a>
+        <a href="http:/google.com">{props.title}</a>
         <div style={{display: 'flex', flexDirection: 'row'}}>
-            <p style={{marginRight: 30}}>45 Comments</p>
-            <p>Submitted 5 minutes ago</p>
+            <p style={{marginRight: 30}}>{props.comments} Comments</p>
+            <p>Submitted {props.submitted.fromNow()}</p>
         </div>
     </div>
 }
